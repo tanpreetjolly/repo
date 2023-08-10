@@ -3,7 +3,6 @@ import { Wrapper } from '@/components/Layout';
 const Hero = () => {
   return (
     <Wrapper>
-      <Carousel />
     </Wrapper>
   );
 };
