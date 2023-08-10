@@ -12,7 +12,7 @@ const DashboardNavbar = () => {
   };
 
   return (
-    <div className=" text-blue-600 dark:text-gray-50 bg-gray-800  h-screen fixed">
+    <div className=" text-blue-600 dark:text-gray-50 bg-gray-800  h-screen fixed z-20">
       <Button
         className="lg:hidden absolute -z-10 left-2   top-8 shadow-xl"
         onClick={handleMenuToggle}
@@ -50,7 +50,7 @@ const DashboardNavbar = () => {
         </ul>
       </nav>
       {isNavbarOpen && (
-        <nav className="w-20 h-screen bg-gray-800 flex flex-col items-center py-8 lg:hidden">
+        <nav className="w-20 h-screen bg-gray-800 flex flex-col items-center py-8 lg:hidden z-20">
           <ul className="flex flex-col gap-8">
             <Button onClick={handleMenuToggle} color="inherit">
               <span className="material-symbols-rounded">cancel</span>

@@ -2,7 +2,8 @@ import Head from 'next/head';
 import Footer from './Footer';
 import styles from './Layout.module.css';
 import Nav from './Nav';
-
+import RightSidebar from './RightSidebar';
+import Topbar from '../Topbar/Topbar';
 const Layout = ({ children }) => {
   return (
     <>
@@ -29,11 +30,12 @@ const Layout = ({ children }) => {
           />
         </Head>
         <Nav />
-
-        <div className="pl-20 lg:pl-24 w-full ">
+        <Topbar />
+        <div className="pl-20 lg:pl-24 w-full pr-60 lg:pr-80">
           <main className={styles.main}>{children}</main>
           <Footer />
         </div>
+        <RightSidebar />
       </div>
     </>
   );
